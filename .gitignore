@@ -11,6 +11,8 @@
 # production
 /build
 
+# Tránh commit vscode lên git
+#/.vscode
 # misc
 .DS_Store
 .env.local
