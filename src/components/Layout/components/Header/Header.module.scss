@@ -21,13 +21,15 @@
     padding-left: 16px;
 }
 
+.logo {
+    width: 300px;
+}
 .search,
 .search-result {
     width: 500px;
 }
 .search {
     position: relative;
-
     height: var(--search-height);
     padding-left: 16px;
     display: flex;
@@ -79,7 +81,7 @@
     height: 100%;
     border-top-right-radius: var(--search-border-radius);
     border-bottom-right-radius: var(--search-border-radius);
-    font-size: 1.8rem;
+    // font-size: 1.8rem;
     color: rgba(22, 24, 35, 0.75);
 
     &:hover {
@@ -99,11 +101,60 @@
     font-weight: 600;
     color: rgba(22, 24, 35, 0.5);
 }
+
+// Action
 .action {
+    min-width: 160px;
+    display: flex;
+    align-items: center;
     .btn-login {
         font-weight: 700;
     }
-    width: 160px;
+
+    .upload-btn {
+        min-width: 110px;
+        padding: 0px 16px;
+        height: 36px;
+        border: 1px solid rgba(22, 24, 35, 0.12);
+        border-radius: 2px;
+        font-weight: 600;
+        background: rgb(255, 255, 255);
+    }
+
+    .messe-btn {
+        position: relative;
+
+        width: 32px;
+        height: 32px;
+        font-size: 2.2rem;
+        margin-left: 18px;
+        background-color: transparent;
+        cursor: pointer;
+        .notice-circle {
+            position: absolute;
+            top: -4px;
+            right: -4px;
+            width: 20px;
+            height: 20px;
+            background-color: #ff3147; /* Red color for the badge */
+            color: #fff; /* White text color */
+            font-size: 14px; /* Small font size for the number */
+            font-weight: bold;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%; /* Circular badge */
+            box-shadow: 0 0 4px rgba(0, 0, 0, 0.2); /* Optional shadow for better visibility */
+        }
+    }
+    .user-avatar {
+        width: 32px;
+        height: 32px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-left: 32px;
+        cursor: pointer;
+    }
 }
 .more-btn {
     margin-left: 16px;
